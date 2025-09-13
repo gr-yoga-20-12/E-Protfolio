@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR Yogananth - Portfolio</title>
+    <meta name="description" content="Professional portfolio of GR Yogananth - ECE Student specializing in IoT and Embedded Systems at IIIT Sri City">
+    <meta name="keywords" content="IoT, Embedded Systems, Electronics, Arduino, Raspberry Pi, ECE Student">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://GRYogananth-portfolio.com/">
+    <meta property="og:title" content="GR Yogananth - Portfolio">
+    <meta property="og:description" content="Professional portfolio showcasing IoT and embedded systems projects">
+    <meta property="og:image" content="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://GRYogananth-portfolio.com/">
+    <meta property="twitter:title" content="GR Yogananth - Portfolio">
+    <meta property="twitter:description" content="Professional portfolio showcasing IoT and embedded systems projects">
+    <meta property="twitter:image" content="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Particles Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>GR Yogananth</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hello, I'm <span class="highlight">GR Yogananth</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span id="typed-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Passionate about Electronics, IOT and Embedded Systems. I thrive on hands-on projects, those
+                    involving electronic components and sensors. I'm always curious about how electronics can be used to create simple, smart
+                    solutions to real-world problems.
+
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                    <a href="assets/resume.pdf" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/gr-yoga-20-12" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yogananth-gr-4204b92ab" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="assets/Photo.jpg" alt="GR Yogananth" loading="lazy">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Objective</h3>
+                    <p>
+                        I'm an ECE Student with a passion for IoT and Embedded Systems. I thrive on hands-on projects, those involving electronic components and sensors.
+                        I enjoy building applications that are used to resolve the real-world problems.
+                    </p>
+                    <p>
+                        My journey in core electronics began with a curiosity about how electronics, technologies 
+                        and sensors can be intergrated to build a smart solutions to real-world challenges.
+                    </p>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <h4>Soft Skills</h4>
+                            <p>Team Management, Communication Skills, Team Work, Time Management</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <h4>Hard Skills</h4>
+                            <p>Arduino, Raspberry Pi, LTspice</p>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <h4>Pragramming Language</h4>
+                            <p>Embedded C, C++, MATLAB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Education Section -->
+<section id="education" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">My Academic Journey</p>
+        </div>
+        <div class="simple-list">
+            <div class="list-item">
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title" data-modal="education-1">Bachelor of Engineering</h3>
+                        <p class="item-subtitle">Electronics and Communication Engineering</p>
+                        <p class="item-location">Indian Institute of Information Technology Sri City</p>
+                    </div>
+                    <span class="item-date">2023 - Present</span>
+                </div>
+            </div>
+
+            <div class="list-item">
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title" data-modal="education-2">Higher Secondary Education</h3>
+                        <p class="item-subtitle">Intermediate (MPC Stream)</p>
+                        <p class="item-location">Narayana Junior College, Brahmadevam, Nellore</p>
+                    </div>
+                    <span class="item-date">2021 - 2023</span>
+                </div>
+            </div>
+
+            <div class="list-item">
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title" data-modal="education-3">Secondary Education</h3>
+                        <p class="item-subtitle">Class X (State Board)</p>
+                        <p class="item-location">Narayana EM HS Pedarupalli, Nellore</p>
+                    </div>
+                    <span class="item-date">Passed in 2021</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Modal Popups -->
+<div class="modal-overlay" id="modal-education-1">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div>
+                <h3 class="modal-title">Bachelor of Engineering</h3>
+                <p class="modal-subtitle">Electronics and Communication Engineering</p>
+            </div>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-info">
+                <div class="info-card">
+                    <div class="info-label">Current CGPA</div>
+                    <div class="info-value">7.80</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">Location</div>
+                    <div class="info-value">Sri City, India</div>
+                </div>
+                
+                <div class="modal-description">
+                <p>Currently pursuing my Bachelor's degree in Electronics and Communication Engineering at the prestigious Indian Institute of Information Technology Sri City. My academic journey focuses on cutting-edge technologies in embedded systems, IoT, and communication systems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modal-education-2">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div>
+                <h3 class="modal-title">Higher Secondary Education</h3>
+                <p class="modal-subtitle">Intermediate (MPC Stream)</p>
+            </div>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-info">
+                <div class="info-card">
+                    <div class="info-label">Overall Percentage</div>
+                    <div class="info-value">96.2%</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">Stream</div>
+                    <div class="info-value">MPC(Mathematics, Physics, Chemistry)</div>
+                </div>
+            </div>
+            
+            <div class="modal-description">
+                <p>Completed my Higher Secondary Education at Narayana Junior College, Brahmadevam, Nellore..</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modal-education-3">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div>
+                <h3 class="modal-title">Secondary Education</h3>
+                <p class="modal-subtitle">Class X (State Board)</p>
+            </div>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-info">
+                <div class="info-card">
+                    <div class="info-label">Overall Percentage</div>
+                    <div class="info-value">98.6%</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">Year</div>
+                    <div class="info-value">Passed in 2021</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">Board</div>
+                    <div class="info-value">State Board</div>
+                </div>
+            </div>
+            
+            <div class="modal-description">
+                <p>Completed my Secondary Education at Narayana EM HS Pedarupalli, Nellore. This foundational education established my strong base in core subjects and developed essential learning skills.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Resume</h2>
+            <div class="resume-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="resume-preview">
+                    <div class="resume-card">
+                        <div class="resume-header">
+                            <i class="fas fa-file-alt"></i>
+                            <h3>Professional Resume</h3>
+                        </div>
+                        <div class="resume-body">
+                            <p>View my complete professional experience, and Projects (Included in Resume) .</p>
+                            <div class="resume-stats">
+                                <div class="stat">
+                                    <span class="stat-number">3rd Year UG Student</span>
+                                    <span class="stat-label">Years Experience</span>
+                                </div>
+                                
+                                <div class="stat">
+                                    <span class="stat-number">2</span>
+                                    <span class="stat-label">Projects Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume-actions">
+                            <a href="#" class="btn btn-primary" onclick="openResumeModal()">
+                                <i class="fas fa-eye"></i>
+                                View Online
+                            </a>
+                            <a href="assets/resume.pdf" class="btn btn-secondary" target="_blank">
+                                <i class="fas fa-download"></i>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">My Professional Journey</p>
+        </div>        
+        <div class="simple-list">
+            <div class="list-item">
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title" data-modal="projects-1">Seat Belt Safety System Project</h3>
+                        <p class="item-subtitle">Hardware & IoT Development</p>
+                        <p class="item-location">Personal Project - IIIT Sri City</p>
+                    </div>
+                    <span class="item-date">Aug - Dec 2024</span>
+                </div>
+            </div>
+
+            <div class="list-item">
+                <div class="item-header">
+                    <div>
+                        <h3 class="item-title" data-modal="projects-2">IoT Street Light Control</h3>
+                        <p class="item-subtitle">ElectroForge Hackathon Project</p>
+                        <p class="item-location">Mini Project Competition</p>
+                    </div>
+                    <span class="item-date">2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- projects Modal Popups -->
+<div class="modal-overlay" id="modal-projects-1">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div>
+                <h3 class="modal-title">Seat Belt Safety System</h3>
+                <p class="modal-subtitle">Hardware & IoT Development Project</p>
+            </div>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-info">
+                <div class="info-card">
+                    <div class="info-label">Duration</div>
+                    <div class="info-value">3 Months</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">Type</div>
+                    <div class="info-value">Course Project</div>
+                </div>
+            </div>
+            
+            <div class="modal-description">
+                <p>Designed and developed a comprehensive smart seat belt safety system aimed at minimizing injuries during vehicle collisions. This project combines hardware engineering with IoT connectivity to create an intelligent safety solution.</p>
+            </div>
+
+            <div class="achievements">
+                <h4>Key Features & Achievements:</h4>
+                <ul>
+                    <li>Automatic belt tightening mechanism upon accident detection</li>
+                    <li>Real-time multiple sensors and actuators integration for collision detection</li>
+                    <li>Bluetooth module for emergency communication</li>
+                    <li>Immediate alert system to emergency contacts</li>
+                    <li>Enhanced passenger safety through automated response</li>
+                </ul>
+            </div>
+
+            <div class="modal-tags">
+                <span class="tag">Arduino</span>
+                <span class="tag">Bluetooth</span>
+                <span class="tag">Sensors</span>
+                <span class="tag">Safety Systems</span>
+                <span class="tag">IoT</span>
+                <span class="tag">Emergency Response</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modal-projects-2">
+    <div class="modal-content">
+        <div class="modal-header">
+            <div>
+                <h3 class="modal-title">IoT Street Light Control</h3>
+                <p class="modal-subtitle">ElectroForge Hackathon Project</p>
+            </div>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-info">
+                <div class="info-card">
+                    <div class="info-label">Utkrishta Event 2024</div>
+                    <div class="info-value">ElectroForge</div>
+                </div>
+                <div class="info-card">
+                    <div class="info-label">Category</div>
+                    <div class="info-value">Mini Project</div>
+                </div>
+            </div>
+            
+            <div class="modal-description">
+                <p>Developed an intelligent IoT-enabled street lighting system designed for energy optimization and smart city applications. The project focuses on automated lighting control based on environmental conditions and manual override capabilities.</p>
+            </div>
+
+            <div class="achievements">
+                <h4>Key Features & Achievements:</h4>
+                <ul>
+                    <li>LDR sensor-based automatic dimming functionality</li>
+                    <li>NodeMCU integration for IoT connectivity</li>
+                    <li>Dual control modes: automatic and manual via Blynk app</li>
+                    <li>Sunrise/sunset logic implementation</li>
+                    <li>Weather detection for intelligent power optimization</li>
+                </ul>
+            </div>
+
+            <div class="modal-tags">
+                <span class="tag">NodeMCU</span>
+                <span class="tag">LDR Sensors</span>
+                <span class="tag">Blynk App</span>
+                <span class="tag">Weather Detection</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Have a project in mind or want to collaborate? I'd love to hear from you!
+            </p>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+                    <h3>Get in Touch</h3>
+                    <p>I'm always open to discussing new opportunities, creative projects, or just having a friendly chat about technology and innovation.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>yogananthgr@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 6382651782</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Thalaivasal, Salem(DT), Tamil Nadu</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form" data-aos="fade-left" data-aos-delay="300">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            Sending...
+                        </span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="contact-success" id="contact-success">
+                <div class="success-animation">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Message Sent Successfully!</h3>
+                <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                <button class="btn btn-secondary" onclick="closeSuccessMessage()">Close</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GR Yogananth</h3>
+                    <p>Dedicated IoT and embedded systems developer creating intelligent solutions for real-world challenges of tomorrow.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/gr-yoga-20-12" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/yogananth-gr-4204b92ab" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GR Yogananth. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Resume Modal -->
+    <div class="modal" id="resume-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Resume Preview</h3>
+                <button class="modal-close" onclick="closeResumeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe src="assets/resume.pdf" width="100%" height="600px"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
